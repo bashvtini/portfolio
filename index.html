@@ -25,30 +25,16 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
       <div class="container">
         <a class="navbar-brand text-white" href="#">Portfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mb-1">
-              <a
-                class="nav-link btn btn-dark btn-sm text-white"
-                href="https://drive.google.com/open?id=1EK-nod2B_imt3eUessWnmglr6xUYsra9"
-                target="_blank"
-                ><i class="fas fa-file"></i> CV</a
-              >
-            </li>
-          </ul>
-        </div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mb-1">
+            <a
+              class="nav-link btn btn-dark btn-sm text-white px-2"
+              href="https://bit.ly/licavalentin"
+              target="_blank"
+              ><i class="fas fa-file"></i> CV</a
+            >
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -61,8 +47,9 @@
             <i class="fas fa-user my-2"></i>
             <h5>About Me</h5>
             <p>
-              My name is Valentin Lica. I'm an 19 year's old Full Stack Web
-              Developer. I'm passionate about building websites and learning
+              My name is Valentin Lica. I'm an
+              <span id="birthday"></span> year's old Full Stack Web Developer.
+              I'm passionate about building websites and learning
             </p>
           </div>
         </div>
@@ -85,9 +72,9 @@
                 <li>ReactJS</li>
               </ul>
               <ul>
+                <li>NodeJS</li>
                 <li>Adobe Photoshop</li>
                 <li>Adobe Illustrator</li>
-                <li>NodeJS</li>
               </ul>
             </span>
           </div>
@@ -102,15 +89,24 @@
               <img src="assets/img/pulp.png" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Pulp Stream App</h5>
-                <a
-                  href="https://bashvtini.github.io/pulp-ui/#/"
-                  class="btn btn-dark"
-                  target="_blank"
-                  ><i class="fas fa-eye"></i> View</a
-                >
+
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <a
+                    href="https://bashvtini.github.io/pulp-ui/#/"
+                    class="btn btn-dark mt-2"
+                    target="_blank"
+                    ><i class="fas fa-eye"></i> View</a
+                  ><a
+                    href="https://bashvtini.github.io/movieapp/#/"
+                    class="btn btn-dark mt-2 mr-2"
+                    target="_blank"
+                    ><i class="fas fa-eye"></i> V2</a
+                  >
+                </div>
+
                 <a
                   href="https://github.com/bashvtini/pulp-ui"
-                  class="btn btn-danger mr-2"
+                  class="btn btn-danger mt-2"
                   target="_blank"
                   ><i class="fas fa-code"></i> Code</a
                 >
@@ -124,13 +120,13 @@
                 <h5 class="card-title">The Pirate Bay App</h5>
                 <a
                   href="https://bashvtini.github.io/tpb-ui/#/"
-                  class="btn btn-dark"
+                  class="btn btn-dark mt-2"
                   target="_blank"
                   ><i class="fas fa-eye"></i> View</a
                 >
                 <a
                   href="https://github.com/bashvtini/tpb-ui"
-                  class="btn btn-danger mr-2"
+                  class="btn btn-danger mr-2 mt-2"
                   target="_blank"
                   ><i class="fas fa-code"></i> Code</a
                 >
@@ -144,13 +140,13 @@
                 <h5 class="card-title">Learning Vault App</h5>
                 <a
                   href="https://bashvtini.github.io/learning-vault-ui/#/"
-                  class="btn btn-dark"
+                  class="btn btn-dark mt-2"
                   target="_blank"
                   ><i class="fas fa-eye"></i> View</a
                 >
                 <a
                   href="https://github.com/bashvtini/learning-vault-ui"
-                  class="btn btn-danger mr-2"
+                  class="btn btn-danger mr-2 mt-2"
                   target="_blank"
                   ><i class="fas fa-code"></i> Code</a
                 >
@@ -166,10 +162,27 @@
         <div class="row">
           <div class="col-12 text-center">
             <i class="fas fa-envelope py-2"></i>
-            <h3>bashvtini@gmail.com</h3>
+            <h3>
+              <a href="mailto:licavalentinh@gmail.com" class="email"
+                >licavalentinh@gmail.com</a
+              >
+            </h3>
           </div>
         </div>
       </div>
     </footer>
+
+    <script>
+      const birthday = document.querySelector("#birthday");
+
+      function calculate_age(dob) {
+        var diff_ms = Date.now() - dob.getTime();
+        var age_dt = new Date(diff_ms);
+
+        return Math.abs(age_dt.getUTCFullYear() - 1970);
+      }
+
+      birthday.textContent = calculate_age(new Date(2000, 12, 9));
+    </script>
   </body>
 </html>

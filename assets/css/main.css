@@ -21,3 +21,13 @@
 footer i {
   font-size: 1.5em;
 }
+
+.email {
+  text-decoration: none;
+  color: white;
+}
+
+.email:hover {
+  text-decoration: none;
+  color: white;
+}
