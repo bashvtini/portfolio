@@ -1,209 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Import -->
+    <script
+      src="https://kit.fontawesome.com/d02c8a8a14.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
-    />
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Home - Valentin Lica - Website</title>
   </head>
-
-  <body class="bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
-      <div class="container">
-        <a class="navbar-brand text-white" href="#">Portfolio</a>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mb-1">
-            <a
-              class="nav-link btn btn-dark btn-sm text-white px-2"
-              href="https://drive.google.com/file/d/1VrG4VaNFVcVmEHTwelXyQ5raqzC3J-rv/view"
-              target="_blank"
-              ><i class="fas fa-file"></i> CV</a
-            >
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-module">
+          <li class="headerli"><a href="/" class="navbar-item">Home 🏡</a></li>
+          <li class="headerli">
+            <a href="portfolio.html" class="navbar-item">Portfolio 📚</a>
+          </li>
+          <li class="headerli">
+            <a href="contact.html" class="navbar-item">Contact ☎️</a>
           </li>
         </ul>
-      </div>
-    </nav>
+        <ul class="navbar-module navbar-socials">
+          <li class="headerli">
+            <a href="mailto:licavalentinh@gmail.com" class="navbar-item"
+              ><i class="far fa-envelope"></i
+            ></a>
+          </li>
+          <li class="headerli">
+            <a href="https://github.com/bashvtini" class="navbar-item"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="headerli">
+            <a
+              href="https://drive.google.com/file/d/1VrG4VaNFVcVmEHTwelXyQ5raqzC3J-rv/view"
+              class="navbar-item"
+              ><i class="fas fa-file"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
 
-    <div class="container pt-5" id="about">
-      <div class="row pt-5 mb-3">
-        <div
-          class="col-12 col-sm-12 col-md-12 col-lg-3 intro d-flex justify-content-center align-items-center bg-danger text-white"
-        >
-          <div class="box text-center px-1">
-            <i class="fas fa-user my-2"></i>
-            <h5>About Me</h5>
-            <p>
-              My name is Valentin Lica. I'm an
-              <span id="birthday"></span> year's old Full Stack Web Developer.
-              I'm passionate about building websites and learning
-            </p>
+      <main>
+        <div class="intro">
+          <h1 class="intro-header">I'm Valentin Lica</h1>
+          <h2 class="intro-description">Full-Stack Web Developer</h2>
+        </div>
+
+        <div class="row mt-4 mt-4">
+          <div class="col-md-8">
+            <img src="images/punetori.png" alt="Punetori" class="w-100" />
+          </div>
+          <div class="col-md-4">
+            <div class="work-text d-none d-md-block">
+              <h5>✨ Featured Work</h5>
+              <h3>Punetori</h3>
+            </div>
+            <div class="project-info-card">
+              <div class="card-body">
+                <p>
+                  A website where you can search for the newst jobs, and get
+                  notified via email when a new position is avaliabe.
+                </p>
+              </div>
+            </div>
+            <div class="tags">
+              <code>React</code>
+              <code>Node.js</code>
+              <code>MongoDB</code>
+              <code>API</code>
+            </div>
+            <div class="text-right mt-4 if--mobile-left">
+              <a href="portfolio.html"
+                >View all my projects <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
         </div>
-        <div
-          class="col-12 col-sm-12 col-md-12 col-lg-3 col-lg-6 intro d-flex justify-content-center align-items-center bg-primary text-white"
-        >
-          <h1>Welcome to my Portfolio</h1>
-        </div>
-        <div
-          class="col-12 col-sm-12 col-md-12 col-lg-3 intro d-flex justify-content-center align-items-center bg-success text-white"
-        >
-          <div class="box text-center px-1">
-            <i class="fas fa-code my-2"></i>
-            <h5>My Skills</h5>
-            <span class="d-flex text-left">
-              <ul>
-                <li>HTML 5</li>
-                <li>CSS 3</li>
-                <li>Javascript</li>
-                <li>ReactJS</li>
-              </ul>
-              <ul>
-                <li>NodeJS</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-              </ul>
-            </span>
+
+        <div class="row portfolio-divider">
+          <div class="col-md-6">
+            <div class="contact-social-bg">
+              <div class="justify-content-center">
+                <i class="far fa-envelope"></i>
+                <p>licavalentinh@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-social-bg">
+              <div class="justify-content-center">
+                <i class="fas fa-phone-alt"></i>
+                <p>+068 34 34 031</p>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class="contact">
+          <h2>Feel free to contact me</h2>
+          <p>I'm open to new opportunities and chatting.</p>
+          <a class="button-module button-contact mt-3" href="contact.html"
+            >Get in touch</a
+          >
+        </div>
+      </main>
+
+      <div class="background-eff"></div>
+      <div class="d-none d-md-block">
+        <div class="background-eff2"></div>
       </div>
 
-      <div id="project">
-        <h2 class="text-white text-center mt-5 mb-3">Projects</h2>
+      <footer class="pt-4 my-md-5 pt-md-5">
         <div class="row">
-          <div class="col-12 col-md-4 mt-2">
-            <div class="card">
-              <img src="assets/img/punetori.png" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Job Search App</h5>
-                <a
-                  href="https://bashvtini.github.io/punetori-ui/#/"
-                  class="btn btn-dark mt-2"
-                  target="_blank"
-                  ><i class="fas fa-eye"></i> View</a
-                >
-                <a
-                  href="https://github.com/bashvtini/punetori-ui"
-                  class="btn btn-danger mr-2 mt-2"
-                  target="_blank"
-                  ><i class="fas fa-code"></i> Code</a
-                >
-              </div>
-            </div>
+          <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">© Copyright 2020</small>
           </div>
-
-          <div class="col-12 col-md-4 mt-2">
-            <div class="card">
-              <img src="assets/img/pulp.png" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Movie Stream App</h5>
-
-                <div class="btn-group" role="group" aria-label="Basic example">
-                  <a
-                    href="https://bashvtini.github.io/pulp-ui/#/"
-                    class="btn btn-dark mt-2"
-                    target="_blank"
-                    ><i class="fas fa-eye"></i> View</a
-                  ><a
-                    href="https://bashvtini.github.io/movieapp/#/"
-                    class="btn btn-dark mt-2 mr-2"
-                    target="_blank"
-                    ><i class="fas fa-eye"></i> V2</a
-                  >
-                </div>
-
-                <a
-                  href="https://github.com/bashvtini/pulp-ui"
-                  class="btn btn-danger mt-2"
-                  target="_blank"
-                  ><i class="fas fa-code"></i> Code</a
-                >
-              </div>
-            </div>
+          <div class="col-6 col-md">
+            <h5>Links</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="index.html">Home</a></li>
+              <li><a class="text-muted" href="portfolio.html">Portfolio</a></li>
+              <li><a class="text-muted" href="contact.html">Contact</a></li>
+            </ul>
           </div>
-          <div class="col-12 col-md-4 mt-2">
-            <div class="card">
-              <img src="assets/img/tpb.png" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Torrent Download App</h5>
-                <a
-                  href="https://bashvtini.github.io/tpb-ui/#/"
-                  class="btn btn-dark mt-2"
-                  target="_blank"
-                  ><i class="fas fa-eye"></i> View</a
-                >
-                <a
-                  href="https://github.com/bashvtini/tpb-ui"
-                  class="btn btn-danger mr-2 mt-2"
-                  target="_blank"
-                  ><i class="fas fa-code"></i> Code</a
-                >
-              </div>
-            </div>
+          <div class="col-6 col-md">
+            <h5>Services</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted">Web Development</a></li>
+            </ul>
           </div>
-          <div class="col-12 col-md-4 mt-2">
-            <div class="card">
-              <img src="assets/img/learning-vault.png" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Tutorial Stream App</h5>
-                <a
-                  href="https://bashvtini.github.io/learning-vault-ui/#/"
-                  class="btn btn-dark mt-2"
-                  target="_blank"
-                  ><i class="fas fa-eye"></i> View</a
+          <div class="col-6 col-md">
+            <h5>Have a question?</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="text-muted email"
+                  ><i class="far fa-envelope"></i> licavalentinh@gmail.com</a
                 >
-                <a
-                  href="https://github.com/bashvtini/learning-vault-ui"
-                  class="btn btn-danger mr-2 mt-2"
-                  target="_blank"
-                  ><i class="fas fa-code"></i> Code</a
+              </li>
+              <li>
+                <a class="text-muted"
+                  ><i class="fab fa-github"></i> bashvtini</a
                 >
-              </div>
-            </div>
+              </li>
+              <li>
+                <a class="text-muted"
+                  ><i class="fas fa-phone"></i> +068 34 34 031</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
-
-    <footer class="mt-5 bg-danger text-white pt-2 pb-3" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <i class="fas fa-envelope py-2"></i>
-            <h3>
-              <a href="mailto:licavalentinh@gmail.com" class="email"
-                >licavalentinh@gmail.com</a
-              >
-            </h3>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      const birthday = document.querySelector("#birthday");
-
-      function calculate_age(dob) {
-        var diff_ms = Date.now() - dob.getTime();
-        var age_dt = new Date(diff_ms);
-
-        return Math.abs(age_dt.getUTCFullYear() - 1970);
-      }
-
-      birthday.textContent = calculate_age(new Date(2000, 9, 12));
-    </script>
   </body>
 </html>
