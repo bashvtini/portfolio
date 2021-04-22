@@ -2,12 +2,12 @@ import React from "react";
 
 import Layout from "@components/Layout";
 
-const HomePage: React.FC = () => {
+const SinglePostPage: React.FC = () => {
   return (
     <Layout>
-      <main>Home Page</main>
+      <main>Single Post Page</main>
     </Layout>
   );
 };
 
-export default HomePage;
+export default SinglePostPage;

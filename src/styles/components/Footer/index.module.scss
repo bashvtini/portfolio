@@ -1,0 +1,15 @@
+@import "../../variables";
+
+.container {
+  max-height: 61px;
+  min-height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $black-15;
+  color: white;
+
+  .container__text {
+    text-align: center;
+  }
+}
