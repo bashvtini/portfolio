@@ -12,10 +12,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: $white;
+    color: $black-90;
     max-width: $screen-width;
     width: 100%;
     margin: auto;
+    padding: 0 16px;
 
     .container__logo {
       .brand__title {
@@ -31,7 +32,7 @@
           .item__link {
             padding: 8px 16px;
             border-radius: 4px;
-            transition: background-color 0.2s ease;
+            transition: background-color 0.1s ease;
 
             @include typography(16px, 400, 28px, 0, center);
 

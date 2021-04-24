@@ -31,6 +31,8 @@
   .form__submit {
     height: 48px;
     background-color: $black-60;
+    border: none;
+    cursor: pointer;
 
     @include typography(18px, 500, 32px, 0, center);
   }

@@ -1,12 +1,10 @@
-import React from "react";
-
 import styles from "@styles/Footer/index.module.scss";
 
 const Footer: React.FC = () => {
   return (
     <footer className={styles.container}>
       <p className={styles.container__text}>
-        © Copyright Aleksandr Hovhannisyan, 2019–Present
+        &#169; Copyright Valentin Lica, 2020–{new Date().getFullYear()}
       </p>
     </footer>
   );

@@ -1,6 +1,5 @@
-import React from "react";
-
 import Form from "./Form";
+import Socials from "./Socials";
 
 import styles from "@styles/Contact/index.module.scss";
 
@@ -14,6 +13,7 @@ const Contact: React.FC = () => {
 
       <div className={styles.container__content}>
         <Form />
+        <Socials />
       </div>
     </article>
   );

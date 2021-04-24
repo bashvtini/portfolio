@@ -16,7 +16,7 @@ const Form: React.FC = () => {
 
       <div className={styles.form_group}>
         <label className={styles.form__label}>Message</label>
-        <textarea name="name" className={styles.form__input}></textarea>
+        <textarea name="name" className={styles.form__input} />
       </div>
 
       <button type="submit" className={styles.form__submit}>

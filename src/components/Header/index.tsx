@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 import pageNavigation from "@utils/pageNavigation";
@@ -10,7 +9,11 @@ const Header = () => {
     <header className={styles.container}>
       <div className={styles.container__wrapper}>
         <div className={styles.container__logo}>
-          <h3 className={styles.brand__title}>Valentin Lica</h3>
+          <Link href="/">
+            <a>
+              <h3 className={styles.brand__title}>Valentin Lica</h3>
+            </a>
+          </Link>
         </div>
 
         <nav className={styles.container__nav}>

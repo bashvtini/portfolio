@@ -1,6 +1,6 @@
-import React from "react";
-
 import Layout from "@components/Layout";
+
+import withAuth from "@components/HOC/withAuth";
 
 const AboutPage: React.FC = () => {
   return (
@@ -10,4 +10,4 @@ const AboutPage: React.FC = () => {
   );
 };
 
-export default AboutPage;
+export default withAuth(AboutPage);
